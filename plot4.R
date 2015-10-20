@@ -1,5 +1,6 @@
 require(sqldf)
 setwd ("~/Exploratory data analysis/Data/")
+Sys.setlocale("LC_TIME","English")
 
 data <- read.csv.sql(file = 'household_power_consumption.txt', header = TRUE,  sep = ';', 
              sql = "select * from file where Date is '1/2/2007' or Date is '2/2/2007'", 
